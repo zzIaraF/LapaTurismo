@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Cadastro</h1>
+    </header>
+
+    <nav> <!--Navegador-->
+        <a href="index.html">voltar</a>
+    </nav>
+
+
+    <main><!--resto-->
+
+                <form name="form_exemplo" action="cadastrarAluno.php" method="post" id="formulario">
+                <fieldset>
+                    <legend>Dados</legend>
+        
+                    <label for="nome">Nome do Comercio:</label>
+                    <input type="text" name="nome" id="nome" required> 
+                    <br>
+                    <label for="email">Contato Email:</label>
+                    <input type="email" name="email" id="email" placeholder="xxx@s.com" required>
+                    <br>
+                    <label for="number">Contato Telefone:</label>
+                    <input type="text" name="number" id="number" placeholder="(55)xx xxxxx xxxxx" required>
+                    <br>
+                    <label for="address">Endereço do Comercio:</label>
+                    <input type="text" name="address" id="address" required> 
+                    <br>
+        
+                    <p>Tipo de Comercio</p>
+        
+                    <label for="hotels">Hotel</label>
+                    <input type="radio" name="comercio" id="hotelso" value="hotels" checked>
+                    
+        
+                    <label for="tranport">Transporte</label>
+                    <input type="radio" name="comercio" id="tranport" value="tranport"> 
+        
+                    <br>
+                    <label for="uploud">Envie uma foto do seu comércio</label>
+                    <br>
+                    <input type="file" name="update" id="update">
+                    <br>
+        
+                    <label for="ask">Fale um pouco sobre seu comércio</label>
+                    <textarea name="ask" id="ask" cols="20" rows="5"></textarea>
+        
+                    <br>
+
+                    <br>
+        
+                    <input type="submit" name="Enviar" id="enviar">
+                    <input type="reset" name="Limpar" id="limpar">
+        
+        
+                </fieldset>
+            </form>
+    </main>
+
+    <footer><!--Rodaper-->
+
+    </footer>
+
+</body>
+</html>
